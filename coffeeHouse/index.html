@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeHouse | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="success" class="Success-message hidden">
+      <span>Order Placed Successfully.</span
+      ><span class="close-btn">&#10006;</span>
+    </div>
+    <div class="container">
+      <form id="form" action="#" method="post">
+        <div class="choice-box">
+          <label for="coffee">Choose your favourite Coffee</label>
+          <select name="coffee" id="coffee">
+            <option value="nocoffee">--------</option>
+            <option value="Espresso">Espresso</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Latte">Latte</option>
+          </select>
+        </div>
+        <div class="choice-box initialState" id="add-on-box">
+          <label for="addOns">Choose an add-on over the coffee</label>
+          <select name="addOns" id="addOns">
+            <option value="Milk">Milk</option>
+            <option value="Cream">Cream</option>
+            <option value="Latte">Latte</option>
+          </select>
+        </div>
+        <div class="btn disable" id="btn-order"><button>Order now</button></div>
+      </form>
+      <h2 class="header">CoffeeHouse Menu</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product/Add-On</th>
+            <th>Milk</th>
+            <th>Cream</th>
+            <th>Latte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="txt-bold">Espresso</td>
+            <td>60</td>
+            <td>75</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td class="txt-bold">Cappuccino</td>
+            <td>80</td>
+            <td>90</td>
+            <td>125</td>
+          </tr>
+          <tr>
+            <td class="txt-bold">Latte</td>
+            <td>100</td>
+            <td>125</td>
+            <td>150</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="orders disapeear">
+      <h2 class="ord-details">Order Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>S/No</th>
+            <th>Coffee</th>
+            <th>Add On</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="table-ord-sum">
+          
+          <tr class="total_bill">
+            <td>Grand Total</td>
+            <td></td>
+            <td></td>
+            <td id="total_amt">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #666;
+}
+
+body {
+  background: papayawhip;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Success-message {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    background: #04AA6D;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: all .4s;
+}
+
+.Success-message > span:first-child {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.Success-message > span:last-child {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+#tot_orders{
+    position: absolute;
+    top: 60px;
+    right: 25px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.choice-box {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.choice-box label {
+  font-size: 17px;
+}
+
+.initialState{
+    display: none;
+}
+
+select,
+option {
+  background: transparent;
+  border: 1px solid #666;
+  font-size: 15px;
+  padding: 4px 8px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table td,
+table th {
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
+table tr:hover {
+  background-color: #f2f2f2;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #d7436f;
+  color: white;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn > button {
+  border: 1px solid #d7436f;
+  background-color: #d7436f;
+  color: white;
+  outline: none;
+  padding: 5px 14px;
+  font-size: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn > button:hover {
+  background: transparent;
+  color: #d7436f;
+}
+
+.disable > button {
+  display: none;
+}
+
+.hidden {
+    display: none;
+    transition: all .4s;
+}
+
+.orders {
+    position: absolute;
+    right: 8px;
+    top: 160px;
+}
+
+.orders > table th {
+    background: #04AA6D;
+} 
+
+.total_bill td{
+    font-weight: 700;
+    color: #d7436f;
+    font-size: 18px;
+}
+
+.ord-details {
+    font-size: 18px;
+}
+
+.disapeear{
+    display: none;
+}
